@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Chart from "react-google-charts";
+import {BrowserRouter as Router, Route} from "react-router-dom"
+import WindserMap from "../components/map/WindserMap"
 
 const data = [
     ["Skills", "Review", { role: "style" }],
@@ -15,6 +17,11 @@ class Home extends React.Component {
         return (
             <div className="Home">
                 <Chart chartType="BarChart" width="100%" height="400px" data={data} />
+                <Router>
+                    <Route path='/map'>
+                        <WindserMap />
+                    </Route>
+                </Router>
             </div>
         );
     }
