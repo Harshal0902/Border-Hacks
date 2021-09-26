@@ -1,5 +1,5 @@
 .login-signup {
-  background-color: #18a0fb;
+  background-color: #6D5ACF;
   display: grid;
   place-items: center;
   height: 100vh;
@@ -12,7 +12,7 @@
   width: 400px;
 }
 
-.iTeach-Heading {
+.TrafficCheck-Heading {
   display: grid;
   place-items: center;
 }

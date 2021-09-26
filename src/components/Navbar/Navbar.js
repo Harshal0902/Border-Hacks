@@ -11,7 +11,7 @@ function Navbar({ handleLogout }) {
         <>
             <nav className='navbar'>
                 <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                    iTeach
+                    Traffic Check
                 </Link>
                 <div className='menu-icon' onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -24,20 +24,11 @@ function Navbar({ handleLogout }) {
                     </li>
                     <li className='nav-item'>
                         <Link
-                            to='/todo'
+                            to='/destination'
                             className='nav-links'
                             onClick={closeMobileMenu}
                         >
-                            To Do
-                        </Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link
-                            to='/review'
-                            className='nav-links'
-                            onClick={closeMobileMenu}
-                        >
-                            Review
+                            Destination
                         </Link>
                     </li>
                     <li className='nav-item' style={{ cursor: "pointer" }}>

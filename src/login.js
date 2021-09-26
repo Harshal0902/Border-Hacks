@@ -10,7 +10,7 @@ const Login = (props) => {
         <>
             <div className="login-signup">
                 <div className="loginContainer">
-                    <h1 className="iTeach-Heading">iTeach</h1>
+                    <h1 className="TrafficCheck-Heading">Traffic Check</h1>
                     <label>Email</label>
                     <input type="text" placeholder="test@gmail.com" outoFocus required value={email} onChange={(e) => setEmail(e.target.value)} />
                     <p className="errorMsg">{emailError}</p>

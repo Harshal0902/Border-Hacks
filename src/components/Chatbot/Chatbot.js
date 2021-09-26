@@ -19,7 +19,7 @@ const theme = {
 const steps = [
   {
     id: "1",
-    message: "Hey! I am Help-bot, how are you feeling today",
+    message: "Hey! I am Help Bot, how are you feeling today",
     trigger: "expressions",
   },
   {
@@ -86,7 +86,7 @@ const steps = [
   {
     id: "selectServices",
     options: [
-      { value: "ToDO", label: "ToDO", trigger: "selectedService" },
+      { value: "Destination", label: "Destination", trigger: "selectedService" },
       { value: "goBack", label: "go back", trigger: "options" },
     ],
   },
@@ -136,8 +136,8 @@ function Chatbot() {
       case "home":
         history.push("/");
         break;
-      case "ToDO":
-        history.push("/todo");
+      case "Destination":
+        history.push("/destination");
         break;
       default:
         break;
@@ -156,7 +156,7 @@ function Chatbot() {
           steps={steps}
           handleEnd={handleEnd}
           opened={opened}
-          headerTitle="Hemp bot"
+          headerTitle="Help Bot"
           botAvatar={"https://uploads-ssl.webflow.com/587121889ec910305c557a46/5f3f844eb1e9653ae8036e14_Bo%20neutral%20final%20.svg"}
           avatarStyle={{ borderRadius: "100%" }}
           floating={true}
